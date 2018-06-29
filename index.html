@@ -1,0 +1,135 @@
+<html>
+  <head>
+        <title>Firebase</title>
+       <!-- Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+    
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!--Import materialize.css-->
+     <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
+       <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      
+     
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    
+
+ </head>
+ 
+ <body>
+     <header>
+           <nav class="navbar-fixed blue lighten-1">
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo"> Firebase </a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">JavaScript</a></li>
+              </ul>
+            </div>
+          </nav>     
+     </header>
+      
+ <main class="container-fluid">
+    <div id="corpo" class="row">
+      <div class="col s12 m12 x6 l6">
+            <div class="row">
+              <div class="row">
+                  <img class="materialboxed" width="150" height="150" src="img/firebase.png">
+              </div>
+              <div class="col s12">
+                       <div class="row">
+                          <div class="input-field col s12 m12 x6 l6">
+                            <i class="material-icons prefix" style="color:#ccc;">email</i>
+                             <input id="email" type="email"/>  
+                             <label for="email">Email</label>
+                            </div>
+                       </div>
+
+                       <div class="row">
+                           <div class="input-field col s12 m12 x6 l6">
+                               <i class="material-icons prefix" style="color:#ccc;">vpn_key</i>
+                               <input id="senha" type="password" />
+                                <label for="senha">Senha</label>
+                           </div>
+                       </div>
+
+                         <div class="row">
+                             <div class="col s12 m12">
+                                  <button class="btn waves-effect waves-light blue lighten-1" onclick="cadastrar()">Cadastar</button>
+                                  <button class="btn waves-effect waves-light blue lighten-1"  onclick="logar()">Logar</button>
+                                  <button class="btn waves-effect waves-light blue lighten-1" onclick="deslogar()">Deslogar</button>
+                             </div>
+                       </div>
+                  </div>
+            </div>
+        </div>
+        
+        <div class="col s12 m12 x6 l6">
+        <section class="card">
+                <div class="row">
+                   <div class="col-xs-12 col-sm-12 col-md-12">  
+                        <div class="card-content">
+                          <p  class="collection-header"><h4>Menssagens</h4><p>
+                          
+                          <ul id="lista-mensagem"class="collection with-header">
+                            
+                          </ul>
+                          
+                        </div>
+                        <div class="card-action">
+                          <div class="row">
+                               <div class="col s12 m12 x12 l12">
+                                <div class="col s12">
+                                    <div class="input-field col s12">
+                                     <input id="mensagem" type="text" class="validate materialize-textarea"/>
+                                      <label for="mensagem">Mensagem</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                     <div class="col s12 m12 x6 l6">
+                                       <button class="btn waves-effect waves-light blue lighten-1" type="submit" onclick="enviarMensagem()" style="margin-left:20px">Enviar Mensagem</button>
+                                       <br>
+                                       <br>
+                                       <br>
+                                       <input type="file" id="file" name="file"/>
+                                           <span id="linkbox"></span>
+                                    </div>
+                                 </div>
+                             </div>
+                          </div>
+                        </div>
+                    </div>
+                 </div>
+         </section>    
+
+        </div> 
+       </div>
+       
+       <section class="row">
+         <h3>Usuarios</h3>
+          <div class="col s6 m6 x6 l6">
+           <ul id="lista-user" class="collection">
+
+           </ul>
+          </div> 
+       </section>
+</main>
+     
+     <!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+            
+     <script type="text/javascript" src="js/main.js"></script>
+     
+
+
+  </body>
+</html>

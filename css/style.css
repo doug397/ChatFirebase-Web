@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.brand-logo{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+header{
+    min-height: 100px;
+}
+nav{
+    min-height: 100px;
+}
+.container{
+    margin-top: 50px;
+}
+#corpo{
+    margin: auto;
+    
+}
+
+#lista-mensagem{
+  max-width: 100%;
+   overflow: auto;
+  /* overflow: scroll;*/
+     max-height: 300px;
+    min-height: 300px;
+   /* overflow: scroll;*/
+}
+#email{
+ font-size: 15px;
+ padding: 2px;
+margin-bottom: 2px;
+}
+#mensage{
+     border: 2px solid aliceblue;
+    padding: 10px;
+    border-radius: 10px 40px 40px 40px;
+    background-color: aliceblue;
+    
+}
+#data{
+    text-align: right;
+    font-size: 10px;
+
+}
+#photo{
+    padding: 5px;
+    border-radius: 10px;
+   border-color: #ccc;
+    height: 200px;
+    width: 200px;
+    background-color: #cccccc;
+
+}
+.collection-item{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
